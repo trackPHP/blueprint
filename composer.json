@@ -21,7 +21,7 @@
     "scripts": {
         "post-create-project-cmd": [
             "mkdir -p public",
-            "cp vendor/trackPHP/core/public/index.php public/index.php"
+            "cp vendor/trackphp/core/public/index.php public/index.php"
         ]
     }
 }
