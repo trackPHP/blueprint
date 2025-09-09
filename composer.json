@@ -1,0 +1,27 @@
+{
+    "name": "trackphp/blueprint",
+    "type": "project",
+    "description": "Starter project for trackPHP, a lightweight, convention-driven PHP framework for building web applications with minimal setup.",
+    "keywords": ["php", "framework", "trackPHP", "starter"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "trackphp/core": "^1.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "mkdir -p public",
+            "cp vendor/trackphp/core/public/index.php public/index.php"
+        ]
+    }
+}
